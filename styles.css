@@ -1,0 +1,274 @@
+/* Reset */
+/* GLOBAL CONTAINER SYSTEM */
+
+body {
+    font-family: Inter Tight, nunito, sans-serif ;
+}
+:root {
+  --bg: #0B0B0F;
+  --text: #F6F6F2;
+  --muted: #A0A0A8;
+  --accent: #C7FF38;
+  --accent-2: #7A5CFF;
+  --line: #2A2A33;
+  --charcoal-gray: #525252;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*
+h1, h2, h3 {
+    font-family: Merriweather, serif ;
+} */
+ .italic-font1{
+    font-family: inter tight, sans-serif;
+    font-size: auto;
+    font-weight: 600;
+    color: var(--accent-2);
+ }
+.container {
+    max-width: 1200px;
+    margin:  auto;
+    padding: 0 40px;
+}
+
+.logo {
+    width: 124px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.28);
+    transform-origin: left center;
+}
+.header {
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.my-name{
+    font-weight: 500;
+    color: var(--accent-2);
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-left: auto;
+    transition: color 0.2s ease;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--bg);
+    font-size: 14px;
+}
+
+.nav a:hover{
+    color: var(--accent-2);
+    text-decoration: none;
+}
+
+
+.connect-btn {
+    border: 1px solid var(--bg);
+    padding: 8px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--bg);
+    font-size: 16px;
+
+    cursor: pointer;
+    box-shadow: 6px 6px 0 var(--bg);
+    transition: all 0.2s ease;
+}
+
+.connect-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 var(--bg);
+}
+
+.hero {
+    padding: 20px 0 80px;
+}
+
+.hero-content {
+    max-width: 1000px;
+}
+
+.intro {
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* BIG HEADLINE */
+.hero-title {
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+}
+
+/* TEXT HIERARCHY */
+.hero-title .dark {
+    color: var(--bg);
+}
+
+.hero-title .light {
+    color: #4f4f4f;
+    font-weight: 500;
+}
+
+/* SUBTEXT */
+.subtext {
+    margin-top: 30px;
+    color: #999;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.subtext-bold {
+    color: var(--bg);
+    font-weight: 700;
+}
+
+/* CTA */
+.cta {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 64px;
+    border-radius: 999px;
+    border: 2px solid var(--bg);
+    background: #f5f5f5;
+    font-size: 34px;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 6px 6px 0 var(--bg);
+    transition: all 0.2s ease;
+}
+
+.cta:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 #111;
+}
+
+.projects {
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 40px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.project h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    border: 1px solid #111;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+/* subtle hover like Framer */
+.project {
+    transition: transform 0.1s ease;
+}
+
+.project:hover {
+    transform: translateY(40px);
+}
+
+.footer {
+    margin-top: 120px;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-name {
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: clamp(32px, 8vw, 48px);
+        line-height: 1.1;
+    }
+
+    .subtext {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .cta {
+        display: block;
+        width: 100%;
+        padding: 22px 24px;
+        font-size: 20px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .nav-links {
+        display: none; /* simple mobile nav for now */
+    }
+}
