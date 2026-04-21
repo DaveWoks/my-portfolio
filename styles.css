@@ -225,8 +225,7 @@ h1, h2, h3 {
 .footer-name {
     margin-bottom: 20px;
     font-size: 10px;
-    color: rgb(0, 0, 0);
-    font-style: uppercase;
+    color: rgb(107, 107, 107);
 }
 
 .footer-top{
@@ -344,5 +343,63 @@ h1, h2, h3 {
 
     .nav-links {
         display: none; /* simple mobile nav for now */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 16px 0;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        gap: clamp(10px, 3vw, 14px) !important;
+    }
+
+    .logo {
+        width: clamp(78px, 26vw, 112px);
+        height: clamp(30px, 9vw, 42px);
+        min-width: 0;
+    }
+
+    .logo img {
+        transform: scale(1.08);
+    }
+
+    .connect-btn {
+        box-sizing: border-box;
+        justify-self: center;
+        width: min(100%, 210px);
+        margin-left: 0 !important;
+        padding: clamp(10px, 3vw, 13px) clamp(16px, 4vw, 24px);
+        font-size: clamp(15px, 4.2vw, 20px);
+        line-height: 1.1;
+        text-align: center;
+        white-space: nowrap;
+        box-shadow: 0 8px 0 var(--bg);
+    }
+
+    .connect-btn-arrow {
+        display: none;
+    }
+
+    .connect-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 0 var(--bg);
+    }
+
+    .mobile-menu-toggle {
+        justify-self: end;
+        width: clamp(38px, 11vw, 48px) !important;
+        height: clamp(38px, 11vw, 48px) !important;
+        border: 0 !important;
+        background: transparent !important;
+    }
+
+    .mobile-menu-toggle span {
+        width: clamp(22px, 6vw, 28px) !important;
+        height: 2px !important;
     }
 }

@@ -268,9 +268,9 @@
                 display: none;
                 width: 42px;
                 height: 42px;
-                border: 1px solid #111;
+                border: 0;
                 border-radius: 999px;
-                background: #fff;
+                background: transparent;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
