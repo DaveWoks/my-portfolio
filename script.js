@@ -18,10 +18,10 @@
     };
 
     const projectImages = {
-        "paytm for business": "images/Image 1.png",
-        "airtel thanks app": "images/Image 2.png",
-        "cricplay": "images/Image 3.png",
-        "peek": "images/Image 4.png"
+        "paytm for business": "Images/Image 1.png",
+        "airtel thanks app": "Images/Image 2.png",
+        "cricplay": "Images/Image 3.png",
+        "peek": "Images/Image 4.png"
     };
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
