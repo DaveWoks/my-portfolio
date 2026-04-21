@@ -18,10 +18,10 @@
     };
 
     const projectImages = {
-        "paytm for business": "https://framerusercontent.com/images/qpn9Hzt19lgJ04UkhEI97Inig.png?width=1600&height=904",
-        "airtel thanks app": "https://framerusercontent.com/images/fww8ReO56aeFtCrisexgsWFCQs.png?width=1600&height=904",
-        "cricplay": "https://framerusercontent.com/images/6jyNibflVW5MnpYYFl7zCjtDFDA.png?width=2000&height=1130",
-        "peek": "https://framerusercontent.com/images/PZe1n6kWg0t80RDrYHaUHiLy8M.png?width=1600&height=904"
+        "paytm for business": "images/Image 1.png",
+        "airtel thanks app": "images/Image 2.png",
+        "cricplay": "images/Image 3.png",
+        "peek": "images/Image 4.png"
     };
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
