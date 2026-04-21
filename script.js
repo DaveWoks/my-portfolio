@@ -85,7 +85,7 @@
 
         const socialLinks = Array.from(document.querySelectorAll(".socials a"));
         socialLinks.forEach((link) => {
-            const key = link.textContent.trim().replace("↗", "").trim().toLowerCase();
+            const key = link.textContent.trim().toLowerCase();
             const href = key.includes("linkedin.com") ? links.linkedin : links[key];
             setExternalLink(link, href, `Open Wokoma, David Chinweuba on ${key}`);
         });
