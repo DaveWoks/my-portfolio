@@ -286,11 +286,15 @@ h1, h2, h3 {
 @media (max-width: 768px) {
 
     .container {
-        padding: 0 20px;
+        padding: 0 28px;
     }
 
-    .hero {
-        padding: 60px 0;
+    .hero.container {
+        padding: 60px 28px;
+    }
+
+    .footer.container {
+        padding: 60px 28px;
     }
 
     .hero-title {
@@ -299,15 +303,31 @@ h1, h2, h3 {
     }
 
     .subtext {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .cta,
+    .footer-connect-btn {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: min(100%, 360px);
+        min-width: 0;
+        max-width: 100%;
+        padding: 16px 24px;
+        border-width: 3px;
+        font-size: clamp(32px, 10vw, 42px);
+        font-weight: 500;
+        line-height: 1;
+        text-align: center;
+        box-shadow: 0 8px 0 var(--bg);
     }
 
     .cta {
-        display: block;
-        width: 100%;
-        padding: 22px 24px;
-        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .projects {
@@ -326,19 +346,14 @@ h1, h2, h3 {
         font-size: clamp(42px, 12vw, 54px);
     }
 
-    .footer-connect-btn {
-        width: min(100%, 360px);
-        min-width: 0;
-        max-width: 100%;
-        padding: 16px 24px;
-        border-width: 3px;
-        font-size: clamp(32px, 10vw, 42px);
-        box-shadow: 0 8px 0 var(--bg);
-    }
-
+    .cta:hover,
     .footer-connect-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 10px 0 var(--bg);
+    }
+
+    .button-arrow {
+        display: none;
     }
 
     .nav-links {
@@ -351,34 +366,40 @@ h1, h2, h3 {
         padding: 16px 0;
     }
 
+    .nav.container {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
     .nav {
         display: grid;
-        grid-template-columns: auto minmax(0, 1fr) auto;
+        grid-template-columns: auto minmax(0, 170px) auto;
         align-items: center;
-        gap: clamp(10px, 3vw, 14px) !important;
+        justify-content: space-between;
+        gap: clamp(8px, 2.4vw, 12px) !important;
     }
 
     .logo {
-        width: clamp(78px, 26vw, 112px);
-        height: clamp(30px, 9vw, 42px);
+        width: clamp(82px, 24vw, 104px);
+        height: clamp(28px, 8vw, 38px);
         min-width: 0;
     }
 
     .logo img {
-        transform: scale(1.08);
+        transform: scale(1.06);
     }
 
     .connect-btn {
         box-sizing: border-box;
         justify-self: center;
-        width: min(100%, 210px);
+        width: 100%;
         margin-left: 0 !important;
-        padding: clamp(10px, 3vw, 13px) clamp(16px, 4vw, 24px);
-        font-size: clamp(15px, 4.2vw, 20px);
+        padding: clamp(9px, 2.8vw, 12px) clamp(12px, 3vw, 18px);
+        font-size: clamp(14px, 3.8vw, 17px);
         line-height: 1.1;
         text-align: center;
         white-space: nowrap;
-        box-shadow: 0 8px 0 var(--bg);
+        box-shadow: 0 7px 0 var(--bg);
     }
 
     .connect-btn-arrow {
@@ -387,7 +408,7 @@ h1, h2, h3 {
 
     .connect-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 0 var(--bg);
+        box-shadow: 0 9px 0 var(--bg);
     }
 
     .mobile-menu-toggle {
