@@ -225,7 +225,7 @@ h1, h2, h3 {
 .footer-name {
     margin-bottom: 20px;
     font-size: 10px;
-    color: violet;
+    color: rgb(0, 0, 0);
     letter-spacing: 10px;
     font-style: uppercase;
 
