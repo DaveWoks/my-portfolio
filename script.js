@@ -2,12 +2,12 @@
     "use strict";
 
     const links = {
-        connect: "https://www.linkedin.com/in/nitin25",
-        call: "https://cal.com/nitin-bhatnagar",
+        connect: "https://me.deets.digital/dav.w",
+        message: "https://me.deets.digital/dav.w",
         dribbble: "https://dribbble.com/NitinBhatnagar",
         instagram: "https://instagram.com/nitin_explains",
         twitter: "https://x.com/nitin_much",
-        linkedin: "https://www.linkedin.com/in/nitin25"
+        linkedin: "https://www.linkedin.com/in/david-w-269194163"
     };
 
     const projectLinks = {
@@ -79,19 +79,15 @@
             link.addEventListener("click", () => body.classList.remove("nav-open"));
         });
 
-        setExternalLink(connectButton, links.connect, "Connect with Nitin Bhatnagar on LinkedIn");
+        setExternalLink(connectButton, links.connect, "Connect with Wokoma, David Chinweuba");
 
-        if (callButton) {
-            callButton.type = "button";
-            callButton.addEventListener("click", () => {
-                window.open(links.call, "_blank", "noopener,noreferrer");
-            });
-        }
+        setExternalLink(callButton, links.message, "Send Wokoma, David Chinweuba a message");
 
         const socialLinks = Array.from(document.querySelectorAll(".socials a"));
         socialLinks.forEach((link) => {
             const key = link.textContent.trim().replace("↗", "").trim().toLowerCase();
-            setExternalLink(link, links[key], `Open Nitin Bhatnagar on ${key}`);
+            const href = key.includes("linkedin.com") ? links.linkedin : links[key];
+            setExternalLink(link, href, `Open Wokoma, David Chinweuba on ${key}`);
         });
 
         if (header) {
